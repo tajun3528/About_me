@@ -2,81 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Form</title>
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-
-  <header>
-    <h1>Web Dev Workshop</h1>
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#schedule">Schedule</a> |
-      <a href="#register">Register</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About the Workshop</h2>
-      <p>Join us to learn HTML, CSS, JavaScript and Tailwind CSS.</p>
-    </section>
-
-    <section id="schedule">
-      <h2>Schedule</h2>
-      <table border="1">
-        <thead>
-          <tr><th>Day</th><th>Topic</th><th>Time</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Saturday</td><td>HTML</td><td>10:00 AM</td></tr>
-          <tr><td>Sunday</td><td>CSS</td><td>10:00 AM</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="register">
-      <h2>Register Now</h2>
-      <form action="#" method="post">
-        <p>
-          <label for="name">Full Name</label><br>
-          <input type="text" id="name" name="name" required>
-        </p>
-        <p>
-          <label for="email">Email</label><br>
-          <input type="email" id="email" name="email" required>
-        </p>
-        <p>
-          <label for="phone">Phone</label><br>
-          <input type="tel" id="phone" name="phone">
-        </p>
-        <p>
-          <label for="level">Experience Level</label><br>
-          <select id="level" name="level">
-            <option value="beginner">Beginner</option>
-            <option value="intermediate">Intermediate</option>
-          </select>
-        </p>
-        <fieldset>
-          <legend>Topics you want to learn</legend>
-          <input type="checkbox" id="t-html" name="topics" value="html">
-          <label for="t-html">HTML</label>
-          <input type="checkbox" id="t-js" name="topics" value="js">
-          <label for="t-js">JavaScript</label>
-        </fieldset>
-        <p>
-          <label for="msg">Message</label><br>
-          <textarea id="msg" name="msg" rows="4" cols="40"></textarea>
-        </p>
-        <button type="submit">Register</button>
-        <button type="reset">Clear</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
-  </footer>
-
+  <div>
+    <h1>Login</h1>
+    <form action="post">
+      <label for="UserName">User Name</label>
+      <br>
+      <input type="text" name="UserName" id="UserName" placeholder="Enter your user name">
+      <br>
+      <label for="Password">Password</label>
+      <br>
+      <input type="password" name="Password" id="Password" placeholder="Enter your password" enterkeyhint="enter">
+      <br>
+      <button type="submit">Login</button>
+      <br>
+      <p>don't have an account? <a href="register.html">Register</a></p>
+    </form>
+  </div>
 </body>
 </html>

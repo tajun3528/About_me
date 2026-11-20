@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Block & CSS Position Example</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 40px;
+      background-color: #f4f4f9;
+    }
+
+    /* 1. Your H1 with the block span */
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 24px;
+    }
+
+    h1 .nav-link {
+      color: #0066cc;
+    }
+
+    h1 span {
+      display: block; /* Forces "Card" onto a new line */
+      color: #333;
+      font-size: 1.5rem;
+    }
+
+    /* 2. Relative Parent Container */
+    .card {
+      position: relative; /* Acts as the anchor for the badge */
+      width: 280px;
+      padding: 24px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 3. Absolute Child Element */
+    .badge {
+      position: absolute; /* Positioned relative to .card */
+      top: 20px;
+      right: 20px;
+      background: #e63946;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1><a href="#"><strong class="nav-link">Nav</strong></a> and <span>Card</span></h1>
+
+  <div class="card">
+    <span class="badge">New</span>
+    <h2>Card Title</h2>
+    <p>Because the card has <code>position: relative</code>, the red badge locks cleanly to its top-right corner.</p>
+  </div>
+
+</body>
+</html>
